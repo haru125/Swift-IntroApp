@@ -29,9 +29,10 @@ class LoginMovieViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: .main) { (_) in
             
             self.player.seek(to: .zero)
-            self.player.play()
+//            self.player.play()
         }
 
+        self.player.play()
         // Do any additional setup after loading the view.
     }
     
